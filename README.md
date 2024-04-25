@@ -27,7 +27,8 @@ To add your own word lists in JSON format, follow these steps:
     {"de": {"romaji": "duh", "english": "of"}},
     {"un": {"romaji": "uhn", "english": "a"}},
     {"à": {"romaji": "ah", "english": "to"}},
-]}
+    ]
+   }
    ```
 3. Place your JSON file in the `data` directory.
 4. Add a new command function in the script to load your custom word list, similar to the existing ones (`sel_japanese`, `sel_french`, etc.).
