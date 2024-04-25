@@ -12,7 +12,7 @@ This is a simple flash card application built using Python and Tkinter, allowing
 
 1. Select a language from the "Language" menu.
 2. Click the buttons to navigate through flashcards.
-3. Use the "Weak" button to mark words for further practice.
+3. Use the "Cross" button to mark words for further practice.
 
 ## Adding Custom Word Lists
 
@@ -20,16 +20,16 @@ To add your own word lists in JSON format, follow these steps:
 
 1. Create a new JSON file with your desired language name, e.g., `my_language.json`.
 2. Format your JSON file with word-meaning pairs. For example:
-   ```json
-   {
+  ```json
+{
   "french": [
     {"le": {"romaji": "luh", "english": "the"}},
     {"de": {"romaji": "duh", "english": "of"}},
     {"un": {"romaji": "uhn", "english": "a"}},
-    {"à": {"romaji": "ah", "english": "to"}},
-    ]
-   }
-   ```
+    {"à": {"romaji": "ah", "english": "to"}}
+  ]
+}
+```
 3. Place your JSON file in the `data` directory.
 4. Add a new command function in the script to load your custom word list, similar to the existing ones (`sel_japanese`, `sel_french`, etc.).
 
